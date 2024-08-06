@@ -17,6 +17,18 @@ body {
   background-color: #030303;
 }
 
+#cursor {
+  width: 2.8vw;
+  height: 2.8vw;
+  border-radius: 50%;
+  /* background-color: #fff; */
+  border: 1px solid #ffffffc3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
 #loader {
   position: relative;
   height: 100%;
@@ -116,4 +128,56 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #151515;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.3vw 8.5vw;
+}
+
+#nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2.5vw;
+}
+#nav-right h4 {
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.hero {
+  /* background-color: red; */
+  width: 71%;
+  margin-left: 29%;
+  height: fit-content;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.hero:nth-child(2) {
+  margin-top: 6.4vw;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 7.1vw;
+  line-height: 7.4vw;
+}
+
+.hero h2,
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 7.1vw;
+  line-height: 7.4vw;
+}
+
+#hero3 {
+  display: flex;
+}
+.hero h2:hover {
+  -webkit-text-stroke: 0.21px #fff;
+  z-index: 9999;
+  color: transparent;
 }
