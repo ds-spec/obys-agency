@@ -51,9 +51,20 @@ function loadingAnimation() {
   tl.from("#nav", {
     opacity: 0,
   });
-  tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1", {
-    y: 100,
-    stagger: 0.2,
+  tl.from("#hero1 h1,#hero2 h1,#hero4 h1", {
+    y: 140,
+    stagger: 0.4,
+  });
+  document.querySelectorAll("#hero3 h2").forEach((el) => {
+    el.style.transform = ""; // Remove inline transform style
+  });
+
+  // Ensure GSAP is properly applied to both h2 elements
+  tl.from("#hero3 h1", {
+    y: 120,
+    stagger: 0.3,
+    // duration: 1,
+    ease: "power2.out",
   });
 }
 loadingAnimation();
